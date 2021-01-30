@@ -17,7 +17,7 @@
 // await quando você quer aguardar com uma promisse para ser resolvida
 // processamento assincrono sequencial
 
-const asyncTimer = () => 
+/*const asyncTimer = () => 
     new Promise((resolve, reject) => {
     setTimeout(() => {
         resolve(12345);
@@ -36,7 +36,7 @@ const simpleFunc = async () => {
         resStream.json()
         );*/
 
-    return data;
+    /*return data;
 };
 
 simpleFunc().then(data => {
@@ -44,6 +44,6 @@ simpleFunc().then(data => {
 })
 .catch(err => {
     console.log(err);
-})
+})*/
 
 
