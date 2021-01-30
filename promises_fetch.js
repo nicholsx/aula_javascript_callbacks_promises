@@ -1,7 +1,12 @@
 // ************ Promises ****************
+// Programação Assincrona
 // Podem ter 3 status: Pending, FullFilled, Reject
 
-const doSomethingPromise = () =>
+//Pending -  Em execução
+//FullFilled - Terminou de executar
+//Reject - Caso ocorra algum erro
+
+/*const doSomethingPromise = () =>
 new Promise((resolve, reject) => {
     setTimeout(function() {
         //did something
@@ -18,11 +23,21 @@ new Promise((resolve, reject) => {
     }, 1000);
 });
 
-// Promises em paralelo 
+/*doSomethingPromise
+    .then(data => {
+        console.log(data);
+        return doOtherThingPromise;
+    })
+    .then(data2 => console.log(data2))
+    .catch(error => console.log("Ops", error));*/
 
-Promise.race([doSomethingPromise(), doOtherThingPromise()]).then(data => {
+// *** Promises em paralelo ***
+
+//Multiplas Promises, a que executa primeiro é o que retorna
+
+/*Promise.race([doSomethingPromise(), doOtherThingPromise()]).then(data => {
     console.log(data);
-});
+});*/
 
 /*Promise.all([doSomethingPromise(), doOtherThingPromise()]).then(data => {
     console.log(data[0].split(''));
